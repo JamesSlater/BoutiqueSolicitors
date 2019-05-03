@@ -1,0 +1,104 @@
+.bg {
+    background: linear-gradient(to right, #3299cc, #5b3192);
+}
+h1 {
+      text-align: center;
+      font-family: 'Varela Round';
+      color: #FFF;
+  }
+
+//   .bg-custom {
+//     background: linear-gradient(10deg, #3299cc, #5b3192);
+//     background-size: 400% 400%;
+  
+//     animation: fancy-bg-animation 10s ease infinite;
+//   }
+  
+//   @keyframes fancy-bg-animation {
+//       0%{background-position:0% 50%}
+//       50%{background-position:100% 51%}
+//       100%{background-position:0% 50%}
+//   }
+  
+ion-img {    
+    height: 20vh;
+    width: 25vh;
+   // transform: translateX(55%);
+   margin: 0 auto;
+    
+}
+
+$white-color: #fff;
+$height100: 100%;
+
+ion-grid {
+    width:100%;
+    height: $height100;
+    //background: #dfdfdf;
+    background: linear-gradient(10deg, #3299cc, #5b3192);
+   background-size: 400% 400%;
+//    // animation: fancy-bg-animation 10s ease infinite;
+//   }
+  
+//   @keyframes fancy-bg-animation {
+//       0%{background-position:0% 50%}
+//       50%{background-position:100% 51%}
+//       100%{background-position:0% 50%}
+//   }
+--webkit-animation: fancy-bg-animation 3s linear infinite;
+--moz-animation: fancy-bg-animation 3s linear infinite;
+animation: fancy-bg-animation 3s linear infinite;
+}
+
+@-webkit-keyframes fancy-bg-animation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes fancy-bg-animation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@keyframes fancy-bg-animation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+
+
+
+ion-row {
+    height: $height100;
+}
+
+ion-col {
+    //border: 1px solid #488aff;
+    //background: $white-color;
+   // background: linear-gradient(to right, #3299cc, #5b3192);
+}
+
+ion-button {
+    font-weight: 300;
+    --border-radius: 20px;
+    --color: #000;
+    font-family: 'Varela Round';   
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+    ion-grid {
+      //  background: linear-gradient(to right, #3299cc, #5b3192);   
+     }
+    ion-col {
+        border: none;
+    }
+}
+
+ion-label {
+    color: red;
+    font-size: 12;
+}
+
+ion-item {
+    --border-radius: 20px;
+}
