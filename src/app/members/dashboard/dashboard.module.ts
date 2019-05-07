@@ -8,11 +8,23 @@ import { IonicModule } from '@ionic/angular';
 import { DashboardPage } from './dashboard.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: DashboardPage
-  }
-];
+  { path: '',
+    component: DashboardPage,
+    children: [
+      {
+      path: 'about',
+      loadChildren: '../about/about.module#AboutPageModule'
+      },
+      {
+        path: 'contact',
+        loadChildren: '../contact/contact.module#ContactPageModule'
+      } ]
+    },
+    {
+      path: 'dashboard',
+      redirectTo: ''
+    } 
+]
 
 @NgModule({
   imports: [

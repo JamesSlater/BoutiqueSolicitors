@@ -1,9 +1,9 @@
-<div class="nav-wrapper">
+<div class="nav-wrapper" style="background: white;">
 <ion-header class="navbar">
  <!---<ion-toolbar> -->
-    <ion-buttons slot="start">
+    <ion-buttons slot="end">
       <ion-button (click)="logout()">
-        <ion-icon slot="icon-only" name="log-out"></ion-icon>
+        <ion-icon slot="icon-only" color="white" name="log-out"></ion-icon>
       </ion-button>
     </ion-buttons>
     <ion-img src="assets/logo.png"></ion-img>
@@ -21,10 +21,7 @@
   </div>
 
   <div class="items">
-    <ion-item>
-      <ion-icon name="search" slot="start"></ion-icon>
-      <ion-label>Search for a service</ion-label>
-    </ion-item>
+   <ion-item (click)="someMethod()"> <ion-icon name="search" slot="start"></ion-icon> <ion-label>Search for a service</ion-label> </ion-item>
     <ion-item>
     <ion-icon name="paper" slot="start"></ion-icon>
     <ion-label>View our latest news</ion-label>
@@ -35,4 +32,23 @@
 </ion-item>
 
   </div>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="about">
+       <!-- <img class="about" src="assets/aboutus.png"> -->
+       <ion-icon name="information-circle-outline"></ion-icon>
+        <ion-label>About Us</ion-label>
+      </ion-tab-button>
+      <ion-tab-button href="members/dashboard">
+       
+        <ion-icon color="blue" name="home"></ion-icon>
+        <ion-label>Dashboard</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="contact">
+        <ion-icon name="contacts"></ion-icon>
+        <ion-label>Contact Us</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>

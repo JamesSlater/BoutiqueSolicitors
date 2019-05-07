@@ -18,22 +18,22 @@ export class AppComponent {
     private authenticationService: AuthenticationService,
     private router: Router
   ) {
-    this.initializeApp();
+    // this.initializeApp();
   }
  
-  initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
+  // initializeApp() {
+  //   this.platform.ready().then(() => {
+  //     this.statusBar.styleDefault();
+  //     this.splashScreen.hide();
  
-      this.authenticationService.authenticationState.subscribe(state => {
-        if (state) {
-          this.router.navigate(['members', 'dashboard']);
-        } else {
-          this.router.navigate(['login']);
-        }
-      });
+  //     this.authenticationService.authenticationState.subscribe(state => {
+  //       if (state) {
+  //         this.router.navigate(['members', 'dashboard']);
+  //       } else {
+  //         this.router.navigate(['login']);
+  //       }
+  //     });
  
-    });
-  }
-}
+//     });
+//   }
+ }

@@ -21,6 +21,7 @@
 
   .items {
     margin-top: 5%;
+    z-index: 100;
   }
 
   .profile ion-avatar {
@@ -34,3 +35,9 @@
       color: blue;
   }
   
+  .about {
+    height: 55%;
+    width: 20%;
+  }
+
+ 
