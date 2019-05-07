@@ -19,8 +19,16 @@ error = this.error;
     // this.authService.logout();
   }
 
-  someMethod() {
-    console.log('clicked');
+  search() {
     this.router.navigate(['members/services']);
+  }
+
+  news() {
+    this.router.navigate(['members/news']);
+  }
+
+  bill() {
+    this.router.navigate(['members/bill']);
+
   }
 }

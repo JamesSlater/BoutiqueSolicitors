@@ -6,7 +6,9 @@ import { convertActionBinding } from '@angular/compiler/src/compiler_util/expres
 const routes: Routes = [
   { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' },
   { path: 'contact', loadChildren: './contact/contact.module#ContactPageModule' },
-  { path: 'services', loadChildren: './services/services.module#ServicesPageModule' }
+  { path: 'services', loadChildren: './services/services.module#ServicesPageModule' },
+  { path: 'news', loadChildren: './news/news.module#NewsPageModule' },
+  { path: 'bill', loadChildren: './bill/bill.module#BillPageModule' }
 
     
   

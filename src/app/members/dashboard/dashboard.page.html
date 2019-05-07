@@ -21,14 +21,20 @@
   </div>
 
   <div class="items">
-   <ion-item (click)="someMethod()"> <ion-icon name="search" slot="start"></ion-icon> <ion-label>Search for a service</ion-label> </ion-item>
-    <ion-item>
-    <ion-icon name="paper" slot="start"></ion-icon>
-    <ion-label>View our latest news</ion-label>
-  </ion-item>
-  <ion-item>
+   <ion-item detail> 
+     <ion-button fill="clear" class="itemBtns" (click)="search()">Search for a service</ion-button>
+     <ion-icon name="search" slot="start"></ion-icon> 
+    </ion-item>
+
+    <ion-item detail> 
+        <ion-button fill="clear" class="itemBtns" (click)="news()">View our latest news</ion-button>
+        <ion-icon name="paper" slot="start"></ion-icon> 
+    </ion-item>
+    
+
+  <ion-item detail>
+  <ion-button fill="clear" class="itemBtns" (click)="bill()">Pay a bill</ion-button>
   <ion-icon name="card" slot="start"></ion-icon>
-  <ion-label>Pay a bill</ion-label>
 </ion-item>
 
   </div>
@@ -36,7 +42,7 @@
   <ion-tabs>
     <ion-tab-bar slot="bottom">
       <ion-tab-button tab="about">
-       <!-- <img class="about" src="assets/aboutus.png"> -->
+    <!-- <img class="about" src="assets/aboutus.png">  -->
        <ion-icon name="information-circle-outline"></ion-icon>
         <ion-label>About Us</ion-label>
       </ion-tab-button>
