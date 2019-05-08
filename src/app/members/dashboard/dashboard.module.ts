@@ -10,20 +10,24 @@ import { DashboardPage } from './dashboard.page';
 const routes: Routes = [
   { path: '',
     component: DashboardPage,
-    children: [
-      {
+    children: []
+  },
+      
+  {
       path: 'about',
-      loadChildren: '../about/about.module#AboutPageModule'
-      },
-      {
+      loadChildren: '../about/about.module#AboutPageModule' 
+  },
+      
+  {
         path: 'contact',
         loadChildren: '../contact/contact.module#ContactPageModule'
-      } ]
-    },
-    {
-      path: 'dashboard',
-      redirectTo: ''
-    } 
+  },
+  {
+        path: 'dashboard',
+        redirectTo: ''
+  }
+      
+
 ]
 
 @NgModule({

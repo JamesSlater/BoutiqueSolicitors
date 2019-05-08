@@ -1,0 +1,25 @@
+.activeTab {
+    background: linear-gradient(10deg, #3299cc, #5b3192);
+    color: white;
+}
+
+.navbar {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
+    padding: 10px 10px 40px 10px;
+    background: linear-gradient(10deg, #3299cc, #5b3192);
+  }
+  .nav-wrapper {
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
+  }
+  
+.navbar ion-img {
+    //  position: absolute;
+      height: 12vh;
+      width: 15vh;
+      margin: 0 auto;
+  }
+ion-card {
+     border: 0.5px solid #3299cc;
+}
+  

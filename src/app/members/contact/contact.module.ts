@@ -11,7 +11,15 @@ const routes: Routes = [
   {
     path: '',
     component: ContactPage
-  }
+  },
+  {
+    path: 'about',
+    loadChildren: '../about/about.module#AboutPageModule' 
+},
+{
+  path: 'dashboard',
+  loadChildren: '../dashboard/dashboard.module#DashboardPageModule' 
+}
 ];
 
 @NgModule({

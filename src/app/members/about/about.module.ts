@@ -11,6 +11,14 @@ const routes: Routes = [
   {
     path: '',
     component: AboutPage
+  },
+  {
+    path: 'dashboard',
+    loadChildren: '../dashboard/dashboard.module#DashboardPageModule' 
+  },
+  {
+    path: 'contact',
+    loadChildren: '../contact/contact.module#ContactPageModule' 
   }
 ];
 
