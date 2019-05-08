@@ -9,9 +9,9 @@
     padding: 10px 10px 40px 10px;
     background: linear-gradient(10deg, #3299cc, #5b3192);
   }
-  .nav-wrapper {
-    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
-  }
+//   .nav-wrapper {
+//     filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
+//   }
   
   ion-img {
     //  position: absolute;
@@ -33,6 +33,7 @@
      height: 75%;
      width: 14%;
      margin-left: 0;
+     color: linear-gradient(10deg, #3299cc, #5b3192);     
  }
 
  ion-fab-button ion-icon {
