@@ -8,9 +8,30 @@
     filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
   }
   
+
+  ion-buttons {
+    position: absolute;
+  }
+
   ion-img {
     //  position: absolute;
       height: 12vh;
       width: 15vh;
       margin: 0 auto;
   }
+
+.billing {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+.billing ion-input {
+    border: 1px solid #000;
+    
+}
+
+.billing ion-select {
+    border: 1px solid #000;
+    
+}

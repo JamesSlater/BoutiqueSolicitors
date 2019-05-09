@@ -1,15 +1,61 @@
-<div class="nav-wrapper">
-    <ion-header class="navbar">
+ <ion-header class="navbar">
         <ion-buttons slot="end">
           <ion-button (click)="logout()">
-            <ion-icon slot="icon-only" color="white" name="log-out"></ion-icon>
+            <ion-icon slot="icon-only" name="log-out"></ion-icon>
           </ion-button>
         </ion-buttons>
         <ion-img src="assets/logo.png"></ion-img>
     </ion-header>
-      </div>
       
-<ion-content text-center>
-  <br>
-<ion-title>Pay a bill</ion-title>
+      
+<ion-content padding text-center>
+<h2>Pay a bill</h2>
+<br>
+<ion-label>Our safe and secure app payment service couldn't be easier.</ion-label>
+<br>
+<br>
+<div class="billing">
+  <ion-label>Title</ion-label>
+  <ion-select cancelText="Cancel" okText="Ok" placeholder="Please select...">
+    <ion-select-option value="Mr">Mr</ion-select-option>
+    <ion-select-option value="Mrs">Mrs</ion-select-option>
+    <ion-select-option value="Miss">Miss</ion-select-option>
+  </ion-select>
+<br>
+  <ion-label>First name</ion-label>
+  <ion-input></ion-input>
+
+<br>
+
+  <ion-label>Surname</ion-label>
+  <ion-input></ion-input>
+
+<br>
+
+  <ion-label>Postcode</ion-label>
+  <ion-input></ion-input>
+
+<br>
+
+  <ion-label>Email</ion-label>
+  <ion-input type="email"></ion-input>
+
+<br>
+
+  <ion-label>Telephone</ion-label>
+  <ion-input></ion-input>
+
+<br>
+  <ion-label>Account No.</ion-label>
+  <ion-input></ion-input>
+<br>
+  <ion-label>Invoice / Statement No.</ion-label>
+  <ion-input required></ion-input>
+<br>
+  <ion-label>How much would you like to pay?</ion-label>
+  <ion-input placeholder="£0.00"></ion-input>
+<br>
+</div>
+<ion-button>Make payment now</ion-button>
+
 </ion-content>
