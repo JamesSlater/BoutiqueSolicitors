@@ -9,9 +9,9 @@ const routes: Routes = [
   { path: 'services', loadChildren: './services/services.module#ServicesPageModule' },
   { path: 'news', loadChildren: './news/news.module#NewsPageModule' },
   { path: 'bill', loadChildren: './bill/bill.module#BillPageModule' },
-  { path: 'team', loadChildren: './team/team.module#TeamPageModule' }
+  { path: 'team', loadChildren: './team/team.module#TeamPageModule' },
+  { path: 'menu', loadChildren: './menu/menu.module#MenuPageModule' }  ,
 
-    
   
 ];
  

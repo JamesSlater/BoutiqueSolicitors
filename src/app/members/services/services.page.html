@@ -8,9 +8,26 @@
         <ion-img src="assets/logo.png"></ion-img>
     </ion-header>
       </div>
-
+      <div class="fix">
+      <br>
+      <h2 style="text-align: center;">Search for a service</h2>
+      <ion-searchbar 
+      [formControl]="searchControl" 
+      (ionChange)="onSearchInput()"
+      animated="true">
+      </ion-searchbar>
+      <div *ngIf="searching" class="spinner-container">
+          <ion-spinner></ion-spinner>
+        </div>
+</div>
 <ion-content text-center>
-  <br>
-<h2>Search for a service</h2>
-<ion-searchbar animated="true"></ion-searchbar>
+
+<br>
+
+<ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item.title }}
+    </ion-item>
+  </ion-list>
+
 </ion-content>

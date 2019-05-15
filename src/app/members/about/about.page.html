@@ -1,17 +1,15 @@
 <div class="nav-wrapper">
     <ion-header class="navbar">
-        <ion-buttons slot="end">
-          <ion-button (click)="logout()">
-            <ion-icon slot="icon-only" color="white" name="log-out"></ion-icon>
-          </ion-button>
-        </ion-buttons>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
         <ion-img src="assets/logo.png"></ion-img>
     </ion-header>
       </div>
 
-<ion-content scroll="false">
+<ion-content scroll="true">
 
-  <ion-card class="aboutcard">
+  <!-- <ion-card class="aboutcard">
     <ion-img src="assets/pic1.jpg"></ion-img>
     <ion-card-header>
     <ion-card-title>About Us</ion-card-title>
@@ -32,7 +30,8 @@ Where there is a way, we will deliver.”
 Lawrence Lupin – Founding Director
 
         </ion-card-content>
- </ion-card>
+ </ion-card> -->
+
     <div class="tabs">
         <ion-tabs>
                 <ion-tab-bar slot="bottom">
@@ -41,14 +40,15 @@ Lawrence Lupin – Founding Director
                     <ion-label>About Us</ion-label>
                   </ion-tab-button>
                   <ion-tab-button tab="dashboard">                   
-                    <ion-icon color="blue" name="home"></ion-icon>
+                    <ion-icon name="home"></ion-icon>
                     <ion-label>Dashboard</ion-label>
                   </ion-tab-button>
                   <ion-tab-button tab="contact">
-                    <ion-icon color="red" name="contacts"></ion-icon>
+                    <ion-icon name="contacts"></ion-icon>
                     <ion-label>Contact Us</ion-label>
                   </ion-tab-button>
                 </ion-tab-bar>
               </ion-tabs>
             </div>
+           
             </ion-content>
