@@ -1,30 +1,30 @@
 <div class="nav-wrapper">
-    <ion-header class="navbar">
-        <ion-buttons slot="end">
-          <ion-button (click)="logout()">
-            <ion-icon slot="icon-only" color="white" name="log-out"></ion-icon>
-          </ion-button>
+  <ion-header class="navbar">
+      <ion-buttons slot="start">
+          <ion-menu-button color="tertiary"></ion-menu-button>
         </ion-buttons>
-        <ion-img src="assets/logo.png"></ion-img>
-    </ion-header>
-      </div>
-      <div class="fix">
-      <br>
-      <h2 style="text-align: center;">Search for a service</h2>
-      <ion-searchbar 
-      [formControl]="searchControl" 
-      (ionChange)="onSearchInput()"
-      animated="true">
-      </ion-searchbar>
-      <div *ngIf="searching" class="spinner-container">
-          <ion-spinner></ion-spinner>
-        </div>
+    <!-- <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" color="white" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+    <ion-img src="assets/logo.png"></ion-img>
+  </ion-header>
+</div>
+<div class="fix">
+  <br>
+  <h2 style="text-align: center;">Search for a service</h2>
+  <ion-searchbar [formControl]="searchControl" (ionChange)="onSearchInput()" animated="true">
+  </ion-searchbar>
+  <div *ngIf="searching" class="spinner-container">
+    <ion-spinner></ion-spinner>
+  </div>
 </div>
 <ion-content text-center>
 
-<br>
+  <br>
 
-<ion-list>
+  <ion-list>
     <ion-item *ngFor="let item of items">
       {{ item.title }}
     </ion-item>

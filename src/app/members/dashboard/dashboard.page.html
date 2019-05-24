@@ -1,8 +1,8 @@
 <div class="nav-wrapper" style="background: white;">
-<ion-header class="navbar">
+  <ion-header class="navbar">
     <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
+      <ion-menu-button color="tertiary"></ion-menu-button>
+    </ion-buttons>
     <!-- <ion-buttons slot="end">
       <ion-button (click)="logout()">
         <ion-icon slot="icon-only" color="white" name="log-out"></ion-icon>
@@ -10,49 +10,63 @@
     </ion-buttons> -->
     <ion-img src="assets/logo.png"></ion-img>
 
- 
-</ion-header>
- </div>
-<ion-content padding text-center>
+  </ion-header>
+</div>
+<ion-content  text-center>
 
   <div class="profile">
-  <ion-avatar>
-<img src="assets/man.jpg">
-</ion-avatar>
-<h1>Hello Richard,</h1>
-<ion-label>How can we help you today?</ion-label>
+    <ion-avatar>
+      <img src="assets/man.jpg">
+    </ion-avatar>
+    <h1>Hello Richard,</h1>
+    <ion-label>How can we help you today?</ion-label>
   </div>
 
   <div class="items">
-   <ion-item detail> 
-     <ion-button fill="clear" class="itemBtns" (click)="search()">Search for a service</ion-button>
-     <ion-icon name="search" slot="start"></ion-icon> 
+    <ion-item detail>
+      <ion-button fill="clear" class="itemBtns" (click)="search()">Search for a service</ion-button>
+      <ion-icon name="search" slot="start"></ion-icon>
     </ion-item>
 
-    <ion-item detail> 
-        <ion-button fill="clear" class="itemBtns" (click)="news()">View our latest news</ion-button>
-        <ion-icon name="paper" slot="start"></ion-icon> 
+    <ion-item detail>
+      <ion-button fill="clear" class="itemBtns" (click)="news()">View our latest news</ion-button>
+      <ion-icon name="paper" slot="start"></ion-icon>
     </ion-item>
-    
 
-  <ion-item detail>
-  <ion-button fill="clear" class="itemBtns" (click)="bill()">Pay a bill</ion-button>
-  <ion-icon name="card" slot="start"></ion-icon>
-</ion-item>
+
+    <ion-item detail>
+      <ion-button fill="clear" class="itemBtns" (click)="bill()">Pay a bill</ion-button>
+      <ion-icon name="card" slot="start"></ion-icon>
+    </ion-item>
 
   </div>
+<!-- <div class="faketabs">
+
+    
+  <ion-grid>
+  <ion-row>
+    <ion-col no-padding><ion-icon name="information-circle-outline"></ion-icon><br><ion-label>About Us</ion-label></ion-col>
+    <ion-col no-padding><ion-button expand="full" size="small" no-margin><ion-icon name="home"></ion-icon></ion-button><ion-label>Dashboard</ion-label></ion-col>
+    <ion-col no-padding><ion-button expand="full" size="small" no-margin><ion-icon name="contacts"></ion-icon></ion-button><ion-label>Contact Us</ion-label></ion-col>
+  </ion-row>
+</ion-grid>
+
+
+</div> -->
+
+
 
   <ion-tabs>
     <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="about">
-       <ion-icon name="information-circle-outline"></ion-icon>
+      <ion-tab-button routerDirection="forward" (click)="about()">
+        <ion-icon name="information-circle-outline"></ion-icon>
         <ion-label>About Us</ion-label>
       </ion-tab-button>
       <ion-tab-button class="activeTab" tab="dashboard">
         <ion-icon color="blue" name="home"></ion-icon>
         <ion-label>Dashboard</ion-label>
       </ion-tab-button>
-      <ion-tab-button tab="contact">
+      <ion-tab-button (click)="contact()">
         <ion-icon name="contacts"></ion-icon>
         <ion-label>Contact Us</ion-label>
       </ion-tab-button>

@@ -2,33 +2,54 @@ import { AuthenticationService } from './../../services/authentication.service';
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Router } from '@angular/router';
-
+import { AngularFireAuth } from '@angular/fire/auth';
+import { auth } from 'firebase/app';
 import { NavController } from '@ionic/angular'; 
+import { directiveDef } from '@angular/core/src/view';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  
- user = this.user;
- pass = this.pass;
- error = this.error = "";
-  constructor(private authService: AuthenticationService, private router: Router, public navCtrl: NavController) { }
+  email: string = "a@guest.com";
+  pass: string = "testing";
+  error = this.error = "";
+  constructor(public afAuth: AngularFireAuth, private router: Router, private navCtrl: NavController) { }
  
   ngOnInit() 
   {
+
   }
  
-  login() {
-    if ((this.user == "User") && (this.pass == "123")) {
-    // this.authService.login();
-    this.router.navigate([`members/menu/menu/dashboard`]);
-    this.error = "";
-    // this.navCtrl.navigateRoot('MenuPage');
+  async login() {
+
+    const { email, pass } = this
+    try {
+      const res = await this.afAuth.auth.signInWithEmailAndPassword(email, pass)
+      this.navCtrl.navigateForward('/members/menu/dashboard');     
+       console.log(res)
+       this.error = ""
+    } catch(err) {
+      console.dir(err)
+      if (err.code == "auth/invalid-email"){
+        this.error = "Invalid email address"
+      }
+      else if (err.code == "auth/wrong-password"){
+        this.error = "Invalid password"
+      }
+      else if (err.code == "auth/user-not-found"){
+        this.error = "This email is not registered with us"
+      }
+ 
+      }
+      
+
     }
-    else
-    this.error = "Incorrect credentials, please try again."
+   
+
+
+
   }
  
-}
+

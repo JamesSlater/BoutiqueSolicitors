@@ -4,24 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
-
+import { AboutPageModule } from '../about/about.module'
 import { DashboardPage } from './dashboard.page';
+import { AboutPage } from '../about/about.page';
 
 const routes: Routes = [
   { path: '',
     component: DashboardPage,
     children: []
   },
+
       
-  {
-      path: 'about',
-      loadChildren: '../about/about.module#AboutPageModule' 
-  },
-      
-  {
-        path: 'contact',
-        loadChildren: '../contact/contact.module#ContactPageModule'
-  },
+
   {
         path: 'dashboard',
         redirectTo: ''

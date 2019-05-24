@@ -1,42 +1,42 @@
 <ion-header>
 </ion-header>
- 
+
 <ion-content text-center class="bg-custom">
-    <ion-grid>
-        <ion-row justify-content-center>
-          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
-            <div text-center>
-              <ion-img src="assets/logo.png"></ion-img>
-              <br>
-              <br>
-              <h1>Login</h1>
-            </div>
-            <div padding>
-              <ion-item>
-                  <ion-icon name="person" slot="start"></ion-icon>
-                <ion-input [(ngModel)]="user" type="text" placeholder="Username"></ion-input>
-              </ion-item>
-              <br>
-              <ion-item>
-                <ion-icon name="lock" slot="start"></ion-icon>
-                <ion-input [(ngModel)]="pass" type="password" placeholder="Password"></ion-input>                
-              </ion-item>
-              <br>
-            <ion-label>{{ error }}</ion-label>
-            </div>         
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div text-center>
+          <ion-img src="assets/logo.png"></ion-img>
           <br>
           <br>
+          <h1>Login</h1>
+        </div>
+        <div padding>
+          <ion-item>
+            <ion-icon name="person" slot="start"></ion-icon>
+            <ion-input [(ngModel)]="email" type="text" placeholder="Email"></ion-input>
+          </ion-item>
           <br>
+          <ion-item>
+            <ion-icon name="lock" slot="start"></ion-icon>
+            <ion-input [(ngModel)]="pass" type="password" placeholder="Password"></ion-input>
+          </ion-item>
           <br>
-            <div text-center>           
-           <ion-button size="large" color="tertiary" (click)="login()" expand="block">Login</ion-button>          
-          </div>
-          <!-- <div class="quickcontact">
+          <ion-label>{{ error }}</ion-label>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div text-center>
+          <ion-button size="large" color="tertiary" (click)="login()" expand="block">Login</ion-button>
+        </div>
+        <!-- <div class="quickcontact">
             <ion-label>Quick Contact:</ion-label>  
             <ion-fab slot="end">         
           <ion-fab-button size="small" color="tertiary" fill="outline"><ion-icon name="sunny"></ion-icon></ion-fab-button>
          </ion-fab> </div> -->
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

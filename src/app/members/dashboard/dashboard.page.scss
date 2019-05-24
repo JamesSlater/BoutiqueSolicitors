@@ -20,11 +20,12 @@
   }
 
   .profile {
+      margin-top: 5%;
       margin-bottom: 5%;
   }
 
   .items {
-    margin-top: 5%;
+    margin-top: 10%;
     z-index: 100;
   }
 
@@ -54,4 +55,20 @@
     background: linear-gradient(10deg, #3299cc, #5b3192);
     color: white;
 }
+
+.faketabs {
+    position: fixed;
+    left: 0;
+    // bottom: 5px;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(10deg, #3299cc, #5b3192);
+
+    ion-button {
+      // height: 100%;
+    }
+}
+
+
+
 

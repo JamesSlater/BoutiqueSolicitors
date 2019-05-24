@@ -12,8 +12,6 @@ export class TeamPage implements OnInit {
   ngOnInit() {
   }
 
-  stefan() {
-    console.log('stefan clicked')
-  }
+
 
 }

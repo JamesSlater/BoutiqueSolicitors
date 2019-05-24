@@ -20,15 +20,22 @@ error = this.error;
   }
 
   search() {
-    this.router.navigate(['members/services']);
+    this.router.navigate(['members/menu/services']);
   }
 
   news() {
-    this.router.navigate(['members/news']);
+    this.router.navigate(['members/menu/news']);
   }
 
   bill() {
-    this.router.navigate(['members/bill']);
+    this.router.navigate(['members/menu/bill']);
+  }
+  contact() {
+    this.router.navigate(['members/menu/contact'])
+  }
 
+  about() {
+    this.router.navigate(['members/menu/about'])
+    
   }
 }

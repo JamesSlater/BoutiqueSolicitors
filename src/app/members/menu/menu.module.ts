@@ -13,11 +13,9 @@ const routes: Routes = [
     component: MenuPage,
     children: [
       { path: 'dashboard', loadChildren: '../dashboard/dashboard.module#DashboardPageModule' },
-
-      // { path: 'contact', loadChildren: '../contact/contact.module#ContactPageModule' },
-      { path: 'contact', redirectTo: 'members/menu/menu/contact/contact.module#ContactPageModule' },
-
+      { path: 'contact', loadChildren: '../contact/contact.module#ContactPageModule' },
       { path: 'news', loadChildren: '../news/news.module#NewsPageModule' },
+      { path: 'news/:id', loadChildren: '../post/post.module#PostPageModule' },
       { path: 'services', loadChildren: '../services/services.module#ServicesPageModule' },
       { path: 'team', loadChildren: '../team/team.module#TeamPageModule' },
       { path: 'bill', loadChildren: '../bill/bill.module#BillPageModule' },
@@ -28,7 +26,7 @@ const routes: Routes = [
 
   },{
     path: '',
-    redirectTo: 'dashboard'
+    redirectTo: 'menu/dashboard'
   }
 ];
 
