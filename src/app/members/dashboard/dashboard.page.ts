@@ -1,6 +1,7 @@
 import { AuthenticationService } from './../../services/authentication.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AngularFireAuth } from '@angular/fire/auth';
  
 @Component({
   selector: 'app-dashboard',
@@ -9,13 +10,14 @@ import { Router } from '@angular/router';
 })
 export class DashboardPage implements OnInit {
 error = this.error; 
-  constructor(private authService: AuthenticationService, private router: Router) { }
+  constructor(private router: Router, public afAuth: AngularFireAuth) { }
  
   ngOnInit() {
   }
  
   logout() {
     this.router.navigate(['login']);
+
     // this.authService.logout();
   }
 
@@ -36,6 +38,10 @@ error = this.error;
 
   about() {
     this.router.navigate(['members/menu/about'])
-    
   }
+
+  settings() {
+    this.router.navigate(['members/profile'])
+  }
+
 }

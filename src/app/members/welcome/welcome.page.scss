@@ -1,0 +1,28 @@
+.navbar {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
+    padding: 10px 10px 40px 10px;
+    background: linear-gradient(10deg, #3299cc, #5b3192);
+  }
+
+ion-buttons {
+    position: absolute;
+  }
+
+ion-img {
+      //position: absolute;
+      height: 12vh;
+      width: 15vh;
+      margin: 0 auto;
+  }
+
+  .afProfile {
+      border: 1px solid black;
+      margin: 5%;
+            ion-input {
+                border: 1px solid black;
+                border-radius: 20px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+  }

@@ -1,0 +1,30 @@
+<div class="nav-wrapper" style="background: white;">
+    <ion-header class="navbar">
+      <div class="icons">
+      <ion-buttons slot="start">
+        <ion-menu-button color="tertiary"></ion-menu-button>
+      </ion-buttons>
+  
+      <ion-img src="assets/logo.png"></ion-img></div>
+    </ion-header>
+  </div>
+
+<ion-content text-center>
+<h1>Update your Profile</h1>
+
+<div class="afProfile" padding>
+<h3>PROFILE SETUP</h3>
+<br>
+<h4>Edit Profile Avatar</h4>
+<progress value="0" max="100" id="uploader">0%</progress>
+<input type="file" value="upload" id="fileButton">
+<br>
+<br>
+<ion-label>First Name:</ion-label>
+<ion-input [(ngModel)]="firstName"></ion-input>
+<ion-label>Surname:</ion-label>
+<ion-input></ion-input>
+<br>
+<ion-button (click)="UpdateProfile()">Submit</ion-button>
+</div>
+</ion-content>

@@ -1,10 +1,23 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>chat</ion-title>
-  </ion-toolbar>
+<div class="nav-wrapper" style="background: white;">
+  <ion-header class="navbar">
+    <ion-buttons slot="start">
+      <ion-menu-button color="tertiary"></ion-menu-button>
+    </ion-buttons>
+<ion-icon (click)="settings()" class="settings" color="tertiary" name="settings"></ion-icon>
+    <ion-img src="assets/logo.png"></ion-img>
+
 </ion-header>
+</div>
 
-<ion-content>
-
+<ion-content text-center>
+<h1>Connections</h1>
+<div class="blank"></div>
+<!-- <ion-list>
+  <ion-item>
+  </ion-item>
+</ion-list> -->
+<ion-footer>
+  <ion-button><ion-icon name="add"></ion-icon> New Connection</ion-button>
+</ion-footer>
 </ion-content>
 

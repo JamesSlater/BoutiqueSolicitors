@@ -15,11 +15,14 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { HttpClientModule } from '@angular/common/http';
+import { ServicedetailsPageModule } from '../app/members/servicedetails/servicedetails.module'
 import { Alert } from 'selenium-webdriver';
+import { LoginPageModule } from './public/login/login.module';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
+    LoginPageModule,
     HttpClientModule,
     BrowserModule, 
     IonicModule.forRoot(), 
@@ -28,12 +31,14 @@ import { Alert } from 'selenium-webdriver';
     AngularFireModule.initializeApp(environment.firebase, 'Boutique-Solicitors'),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule ],
+    AngularFireStorageModule,
+    ServicedetailsPageModule ],
   providers: [
     ModalController,
     AlertController,
     CallNumber,
     StatusBar,
+   
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

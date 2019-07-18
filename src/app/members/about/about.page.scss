@@ -1,31 +1,60 @@
 .activeTab {
     background: linear-gradient(10deg, #3299cc, #5b3192);
     color: white;
+    height: 100%;
 }
 
 .navbar {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
     clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
-    padding: 10px 10px 40px 10px;
+    padding: 25px 10px 40px 10px;
     background: linear-gradient(10deg, #3299cc, #5b3192);
   }
 //   .nav-wrapper {
 //     filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
 //   }
-
+// .icons {
+//   padding-top: 6%;
+// }
 ion-buttons {
     position: absolute;
   }
   
-.navbar ion-img {
+ .navbar img {
     //  position: absolute;
       height: 12vh;
       width: 15vh;
-      margin: 0 auto;
+      // margin: 0 auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
   }
 ion-card {
      border: 0.5px solid #3299cc;
 }
 
-// ion-tabs {
-// }
+.tabs {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+}
+
+.aboutcard {
+  
+
+}
+
+ion-tabs {
+  // position: fixed;
+}
+
+.adjustHeight {
+  height: 100%;
+}
+
+.scroll[scrolly=true] {
+  position: relative;
+  overflow: hidden;
+}

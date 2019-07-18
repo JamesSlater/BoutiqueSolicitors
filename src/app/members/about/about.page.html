@@ -1,19 +1,22 @@
-<div class="nav-wrapper">
+<div class="nav-wrapper" style="background: white;">
   <ion-header class="navbar">
+    <div class="icons">
     <ion-buttons slot="start">
       <ion-menu-button color="tertiary"></ion-menu-button>
     </ion-buttons>
-    <ion-img src="assets/logo.png"></ion-img>
+    <img src="assets/logo.png" /></div>
   </ion-header>
 </div>
 <ion-content>
 
+ 
   <ion-card class="aboutcard">
     <ion-img src="assets/pic1.jpg"></ion-img>
     <ion-card-header>
       <ion-card-title>About Us</ion-card-title>
       <ion-card-subtitle>BOUTIQUE SOLICITORS</ion-card-subtitle>
     </ion-card-header>
+    
     <ion-card-content>BOUTIQUE Immigration Lawyers of London have
       ‘years of specialist Legal experience at your disposal’
       <br>
@@ -28,34 +31,27 @@
       If there is no way we tell you, and don’t waste your time.
       Where there is a way, we will deliver.”
       Lawrence Lupin – Founding Director
-
     </ion-card-content>
   </ion-card>
-  <br>
-  <br>
-  <br>
-  <br>
- <ion-footer>
-   <ion-toolbar style="position: fixed;
-   left: 0;
-   bottom: 0;
-   right: 0;">
-    <ion-tabs>
+      <ion-footer><ion-toolbar style="position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;">      
+     
+     <ion-tabs>
       <ion-tab-bar slot="bottom">
         <ion-tab-button class="activeTab">
           <ion-icon name="information-circle-outline"></ion-icon>
           <ion-label>About Us</ion-label>
         </ion-tab-button>
-        <ion-tab-button (click)="dashboard()">
+        <ion-tab-button (click)="dashboard()" class="adjustHeight">
           <ion-icon name="home"></ion-icon>
           <ion-label>Dashboard</ion-label>
         </ion-tab-button>
-        <ion-tab-button (click)="contact()">
+        <ion-tab-button (click)="contact()" class="adjustHeight">
           <ion-icon name="contacts"></ion-icon>
           <ion-label>Contact Us</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
-    </ion-tabs>
-  </ion-toolbar>
-</ion-footer>
+    </ion-tabs></ion-toolbar></ion-footer>
 </ion-content>

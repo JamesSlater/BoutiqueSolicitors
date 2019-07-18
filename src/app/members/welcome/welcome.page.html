@@ -1,0 +1,26 @@
+<div class="nav-wrapper" style="background: white;">
+    <ion-header class="navbar">
+      <ion-buttons slot="start">
+        <ion-menu-button color="tertiary"></ion-menu-button>
+      </ion-buttons>
+  
+      <ion-img src="assets/logo.png"></ion-img>
+  
+    </ion-header>
+  </div>
+
+<ion-content text-center>
+<h1>Welcome!</h1>
+<ion-input>We see this is your first time logging in, please set up your profile</ion-input>
+
+<div class="afProfile" padding>
+<h3>PROFILE SETUP</h3>
+<br>
+<ion-label>First Name:</ion-label>
+<ion-input [(ngModel)]="firstName"></ion-input>
+<ion-label>Surname:</ion-label>
+<ion-input></ion-input>
+<br>
+<ion-button (click)="UpdateProfile()">Submit</ion-button>
+</div>
+</ion-content>

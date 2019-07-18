@@ -1,24 +1,25 @@
 <div class="nav-wrapper" style="background: white;">
   <ion-header class="navbar">
+    <div class="icons">
     <ion-buttons slot="start">
       <ion-menu-button color="tertiary"></ion-menu-button>
     </ion-buttons>
-    <!-- <ion-buttons slot="end">
-      <ion-button (click)="logout()">
-        <ion-icon slot="icon-only" color="white" name="log-out"></ion-icon>
-      </ion-button>
-    </ion-buttons> -->
-    <ion-img src="assets/logo.png"></ion-img>
+<ion-icon (click)="settings()" class="settings" color="tertiary" name="settings"></ion-icon>
 
-  </ion-header>
+    <img src="assets/logo.png">
+
 </div>
-<ion-content  text-center>
+</ion-header>
+</div>
+
+<ion-content text-center>
 
   <div class="profile">
     <ion-avatar>
       <img src="assets/man.jpg">
+      <!-- <ion-img src="https://ucarecdn.com/{{ profilePic }}/-/scale_crop/200x200/center/"></ion-img> -->
     </ion-avatar>
-    <h1>Hello Richard,</h1>
+    <h1>Hello {{ afAuth.auth.currentUser.displayName }}</h1>
     <ion-label>How can we help you today?</ion-label>
   </div>
 
@@ -36,7 +37,7 @@
 
     <ion-item detail>
       <ion-button fill="clear" class="itemBtns" (click)="bill()">Pay a bill</ion-button>
-      <ion-icon name="card" slot="start"></ion-icon>
+      <ion-icon name="cash" slot="start"></ion-icon>
     </ion-item>
 
   </div>
@@ -53,7 +54,6 @@
 
 
 </div> -->
-
 
 
   <ion-tabs>

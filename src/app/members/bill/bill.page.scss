@@ -1,7 +1,7 @@
 .navbar {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
     clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
-    padding: 10px 10px 40px 10px;
+    padding: 25px 10px 40px 10px;
     background: linear-gradient(10deg, #3299cc, #5b3192);
   }
   .nav-wrapper {
@@ -11,6 +11,9 @@
 
   ion-buttons {
     position: absolute;
+  }
+  .icons {
+    // padding-top: 6%;
   }
 
   ion-img {
@@ -24,11 +27,12 @@
     text-align: left;
     margin-left: 5%;
     margin-right: 5%;
+
   }
 
 .billing ion-input {
     border: 1px solid #000;
-    
+    // transform: translateX(5%);
 }
 
 .billing ion-select {

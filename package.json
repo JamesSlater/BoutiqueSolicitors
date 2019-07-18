@@ -40,6 +40,7 @@
     "firebase": "^6.0.2",
     "firebaseui": "^4.0.0",
     "firebaseui-angular": "^3.4.2",
+    "mx.ferreyra.callnumber": "~0.0.2",
     "rxjs": "~6.5.1",
     "tar": "^4.4.8",
     "tslib": "^1.9.0",
@@ -83,8 +84,8 @@
       "mx.ferreyra.callnumber": {}
     },
     "platforms": [
-      "ios",
-      "android"
+      "android",
+      "ios"
     ]
   }
 }

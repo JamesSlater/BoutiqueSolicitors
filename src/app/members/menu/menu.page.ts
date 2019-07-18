@@ -16,24 +16,24 @@ export class MenuPage implements OnInit {
       icon: 'home'
     },
     {
-      title: ' ‏‏‎ ' + 'About',
+      title: ' ‏‏‎ ' + 'About us',
       url: '/members/menu/about',
       icon: 'information-circle-outline'
     },
     {
-      title: ' ‏‏‎ ' + 'Contact',
+      title: ' ‏‏‎ ' + 'Contact us',
       url: '/members/menu/contact',
-      icon: 'book'
+      icon: 'contacts'
     },   
     {
       title: ' ‏‏‎ ' + 'Services',
       url: '/members/menu/services',
-      icon: 'filing'
+      icon: 'search'
     },
     {
       title: ' ‏‏‎ ' + 'News',
       url: '/members/menu/news',
-      icon: 'briefcase'
+      icon: 'paper'
     },
     {
       title: ' ‏‏‎ ' + 'Pay a bill',

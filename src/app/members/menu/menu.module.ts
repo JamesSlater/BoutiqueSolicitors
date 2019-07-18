@@ -17,6 +17,8 @@ const routes: Routes = [
       { path: 'news', loadChildren: '../news/news.module#NewsPageModule' },
       { path: 'news/:id', loadChildren: '../post/post.module#PostPageModule' },
       { path: 'services', loadChildren: '../services/services.module#ServicesPageModule' },
+      { path: 'servicedetails/:item', loadChildren: '../servicedetails/servicedetails.module#ServicedetailsPageModule' },
+
       { path: 'team', loadChildren: '../team/team.module#TeamPageModule' },
       { path: 'bill', loadChildren: '../bill/bill.module#BillPageModule' },
       { path: 'about', loadChildren: '../about/about.module#AboutPageModule' },
