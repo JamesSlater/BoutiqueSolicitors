@@ -23,7 +23,7 @@ const routes: Routes = [
       { path: 'bill', loadChildren: '../bill/bill.module#BillPageModule' },
       { path: 'about', loadChildren: '../about/about.module#AboutPageModule' },
 
-      // { path: 'chat', loadChildren: '../chat/chat.module#ChatPageModule' } 
+      { path: 'chat', loadChildren: '../chat/chat.module#ChatPageModule' } 
     ]
 
   },{

@@ -44,6 +44,11 @@ export class MenuPage implements OnInit {
       title: ' ‏‏‎ ' + 'Team',
       url: '/members/menu/team',
       icon: 'construct'
+    },
+    {
+      title: ' ‏‏‎ ' + 'Chat',
+      url: '/members/menu/chat',
+      icon: 'chatboxes'
     }
 
 

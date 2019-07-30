@@ -17,4 +17,7 @@ export class ChatPage implements OnInit {
     this.router.navigate(['members/profile'])
   }
 
+  chatroom() {
+    this.router.navigate(['members/chatroom'])
+  }
 }

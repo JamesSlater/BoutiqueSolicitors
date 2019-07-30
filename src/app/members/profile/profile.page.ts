@@ -35,6 +35,10 @@ firstName = this.firstName;
                                                                                                                                          
   //   }
 
+  checkForEmoticons() {
+    //^[a-z0-9]+$/i
+  }
+
   UpdateProfile() {
     // this.afAuth.auth.currentUser.displayName = this.firstName;
     this.afAuth.auth.currentUser.updateProfile({displayName: this.firstName})
