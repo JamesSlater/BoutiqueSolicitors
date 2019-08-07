@@ -18,8 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ServicedetailsPageModule } from '../app/members/servicedetails/servicedetails.module'
 import { Alert } from 'selenium-webdriver';
 import { LoginPageModule } from './public/login/login.module';
+import { EmailPageModule } from  './members/email/email.module';
+import { HideheaderDirective } from './directives/hideheader.directive';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HideheaderDirective],
   entryComponents: [],
   imports: [
     LoginPageModule,
@@ -32,6 +34,7 @@ import { LoginPageModule } from './public/login/login.module';
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
+    EmailPageModule,
     ServicedetailsPageModule ],
   providers: [
     ModalController,

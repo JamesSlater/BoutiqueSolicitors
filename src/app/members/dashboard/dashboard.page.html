@@ -16,8 +16,9 @@
 
   <div class="profile">
     <ion-avatar>
-      <img src="assets/man.jpg">
-      <!-- <ion-img src="https://ucarecdn.com/{{ profilePic }}/-/scale_crop/200x200/center/"></ion-img> -->
+      <!-- <img src="assets/man.jpg"> -->
+      <img id="profilePic" src="{{ profilePic }}">
+     
     </ion-avatar>
     <h1>Hello {{ afAuth.auth.currentUser.displayName }}</h1>
     <ion-label>How can we help you today?</ion-label>
@@ -39,6 +40,11 @@
       <ion-button fill="clear" class="itemBtns" (click)="bill()">Pay a bill</ion-button>
       <ion-icon name="cash" slot="start"></ion-icon>
     </ion-item>
+<!-- 
+    <ion-item detail>
+        <ion-button fill="clear" class="itemBtns" (click)="test()">Development Page</ion-button>
+        <ion-icon name="construct" slot="start"></ion-icon>
+    </ion-item> -->
 
   </div>
 <!-- <div class="faketabs">
@@ -55,7 +61,10 @@
 
 </div> -->
 
-
+<ion-toolbar style="position: fixed;
+left: 0;
+bottom: 0;
+right: 0;"> 
   <ion-tabs>
     <ion-tab-bar slot="bottom">
       <ion-tab-button routerDirection="forward" (click)="about()">
@@ -72,4 +81,5 @@
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
+  </ion-toolbar>
 </ion-content>

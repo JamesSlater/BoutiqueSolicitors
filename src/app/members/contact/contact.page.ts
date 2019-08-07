@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
 import { CallNumber } from '@ionic-native/call-number/ngx';
 import { ModalController, AlertController } from '@ionic/angular';
-
+import { EmailPage } from '../email/email.page';
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +11,7 @@ import { ModalController, AlertController } from '@ionic/angular';
 })
 export class ContactPage implements OnInit {
 
-  constructor(private router: Router, private callNumber: CallNumber, private alertController: AlertController) { }
+  constructor(private router: Router, private callNumber: CallNumber, private alertController: AlertController, private modalController: ModalController) { }
 
   ngOnInit() {
   }
@@ -49,5 +49,13 @@ export class ContactPage implements OnInit {
   .then(res => console.log('Launched dialer!', res))
   .catch(err => console.log('Error launching dialer', err))
   }
+
+  async modalEmail() {
+    const modal = await this.modalController.create ({
+      component: EmailPage
+    });
+    modal.present();
+  }
+
 
 }

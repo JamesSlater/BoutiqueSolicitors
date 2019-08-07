@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class WordpressService {
  
-  url = `https://wpdev7.thelegaldc.co.uk/wp-json/wp/v2/`;
+  url = `https://wpdev8.thelegaldc.co.uk/wp-json/wp/v2/`;
   totalPosts = null;
   pages: any;
  

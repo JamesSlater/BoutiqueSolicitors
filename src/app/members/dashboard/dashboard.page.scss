@@ -4,18 +4,13 @@
     padding: 25px 10px 40px 10px;
     background: linear-gradient(10deg, #3299cc, #5b3192);
   }
-  // .nav-wrapper {
-  //   filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
-  // }
+
 
   ion-buttons {
     position: absolute;
    
   }
 
-  .icons {
-    // padding-top: 6%;
-  }
 
   .navbar img {
      
@@ -44,7 +39,14 @@
       margin: 0 auto;
       height: 22vh;
       width: 22vh;
-      border: 1px solid #000;    
+      border: 1px solid #000; 
+  }
+
+  #profilePic {
+    margin: 0 auto;
+    height: 22vh;
+    width: 22vh;
+
   }
 
   .profile h1 {
@@ -75,9 +77,6 @@
     right: 0;
     background: linear-gradient(10deg, #3299cc, #5b3192);
 
-    ion-button {
-      // height: 100%;
-    }
 }
 
 .settings {
@@ -88,6 +87,5 @@
   width: 25px;
 }
 
-#logo {
-}
+
 

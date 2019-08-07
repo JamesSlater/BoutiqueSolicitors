@@ -37,13 +37,17 @@
         </ion-item>
         <ion-item>
           <ion-label>Email at admin@boutiquesolicitors.co.uk</ion-label>
-          <ion-fab-button color="secondary" slot="end" size="small">
+          <ion-fab-button color="secondary" slot="end" size="small" (click)="modalEmail()">
             <ion-icon name="mail"></ion-icon>
           </ion-fab-button>
         </ion-item>
       </ion-list>
     </ion-card-content>
   </ion-card>
+  <ion-toolbar style="position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;"> 
   <ion-tabs>
     <ion-tab-bar slot="bottom">
       <ion-tab-button (click)="about()">
@@ -60,4 +64,5 @@
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
+  </ion-toolbar>
 </ion-content>

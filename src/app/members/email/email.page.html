@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>Email Boutique</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding color="secondary">
+    <h3>From:</h3>
+    <ion-item>
+  <ion-input [(ngModel)]="email" type="email" inputmode="email" placeholder="Your email address" required></ion-input>
+  </ion-item>
+  <h3>Message:</h3>
+  <ion-item id="emailArea">
+  <ion-textarea [(ngModel)]="message" rows=10 placeholder="Type your query" required></ion-textarea>
+  </ion-item>
+  <ion-button expand="full" (click)="sendEmail()">SEND EMAIL</ion-button>
+  
+  <ion-button expand="full" (click)="closeEmail()">CANCEL</ion-button>
+  </ion-content>

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-
+import { FileSizeFormatPipe } from './file-size-format.pipe';
 import { IonicModule } from '@ionic/angular';
 
 import { ProfilePage } from './profile.page';
@@ -21,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ProfilePage]
+  declarations: [ProfilePage, FileSizeFormatPipe]
 })
 export class ProfilePageModule {}

@@ -2,7 +2,9 @@ import { AuthenticationService } from './../../services/authentication.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AngularFireAuth } from '@angular/fire/auth';
- 
+import { AngularFireStorage } from '@angular/fire/storage';
+import * as firebase from 'firebase';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.page.html',
@@ -10,10 +12,23 @@ import { AngularFireAuth } from '@angular/fire/auth';
 })
 export class DashboardPage implements OnInit {
 error = this.error; 
-  constructor(private router: Router, public afAuth: AngularFireAuth) { }
+
+// profilePic = firebase.storage.child(`users/` + this.uid + `/profilePic`)
+ 
+  constructor(private router: Router, public afAuth: AngularFireAuth, public storage: AngularFireStorage) { }
  
   ngOnInit() {
+    this.getProfilePhoto()
   }
+
+  uid = this.afAuth.auth.currentUser.uid;
+  profilePic;
+  getProfilePhoto() {
+  this.storage.ref(`users/` + this.uid + `/profilePic`).getDownloadURL().toPromise().then((url)=>{
+    this.profilePic = url;
+  })
+
+}
  
   logout() {
     this.router.navigate(['login']);
@@ -43,5 +58,7 @@ error = this.error;
   settings() {
     this.router.navigate(['members/profile'])
   }
-
+  test() {
+    this.router.navigate(['members/test'])
+  }
 }

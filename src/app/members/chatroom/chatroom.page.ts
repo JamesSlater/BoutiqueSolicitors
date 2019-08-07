@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, NgZone } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore } from '@angular/fire/firestore';
 import * as firebase from 'firebase';
@@ -8,11 +8,19 @@ import * as firebase from 'firebase';
   styleUrls: ['./chatroom.page.scss'],
 })
 export class ChatroomPage implements OnInit {
+
+@ViewChild('content') private content: any;
+
+ngOnInit() {
+  this.scrollToBottomOnInit();
+}
+
+
 text: string;
 chatRef: any;
 uid: string;
 time: any;
-  constructor(public afAuth: AngularFireAuth, public afStore: AngularFirestore) { 
+  constructor(public afAuth: AngularFireAuth, public afStore: AngularFirestore, public _zone: NgZone) { 
     this.uid = localStorage.getItem('userid')
     this.chatRef = this.afStore.collection('chats', ref=>ref.orderBy('Timestamp')).valueChanges();
   }
@@ -29,9 +37,16 @@ time: any;
     }
   }
 
-
-
-  ngOnInit() {
-  }
-
+  scrollToBottomOnInit() {
+    this._zone.run(() => {
+      setTimeout(() => {
+        this.content.scrollToBottom(300);
+      });
+    });
+} 
+  
 }
+
+
+
+

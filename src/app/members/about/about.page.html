@@ -1,5 +1,5 @@
 <div class="nav-wrapper" style="background: white;">
-  <ion-header class="navbar">
+  <ion-header class="navbar" >
     <div class="icons">
     <ion-buttons slot="start">
       <ion-menu-button color="tertiary"></ion-menu-button>
@@ -7,7 +7,7 @@
     <img src="assets/logo.png" /></div>
   </ion-header>
 </div>
-<ion-content>
+<ion-content padding hideheader>
 
  
   <ion-card class="aboutcard">
@@ -33,11 +33,41 @@
       Lawrence Lupin – Founding Director
     </ion-card-content>
   </ion-card>
-      <ion-footer><ion-toolbar style="position: fixed;
+
+  <!-- <div class="card">
+      <div class="scroll" scrollY="true">
+      <div id="pic">
+      <ion-img src="assets/pic1.jpg"></ion-img>
+      </div>
+      <div id="card-content">
+      <h3>About Us</h3>
+      <h5 style="color: grey;">Boutique Solicitors</h5>
+      <br>
+      BOUTIQUE Immigration Lawyers of London have
+      ‘years of specialist Legal experience at your disposal’
+      <br>
+      <br>
+      Established in 1998 as a niche human rights firm – we have a trusted record of excellent service. BOUTIQUE are
+      frequently recommended by a long list of happy clients.
+      We are passionate about our work and dedicated to achieving life-changing results.
+      <br>
+      <br>
+      <b>OUR PROMISE</b>
+      <br>
+      “If you come to BOUTIQUE, you will get the result you want.
+      If there is a way, we find it and do it for you.
+      If there is no way we tell you, and don’t waste your time.
+      Where there is a way, we will deliver.”
+      Lawrence Lupin – Founding Director
+    </div>
+  </div>
+    </div> -->
+
+      <ion-toolbar style="position: fixed;
         left: 0;
         bottom: 0;
         right: 0;">      
-     
+
      <ion-tabs>
       <ion-tab-bar slot="bottom">
         <ion-tab-button class="activeTab">
@@ -53,5 +83,7 @@
           <ion-label>Contact Us</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
-    </ion-tabs></ion-toolbar></ion-footer>
+    </ion-tabs>
+  </ion-toolbar>
+
 </ion-content>

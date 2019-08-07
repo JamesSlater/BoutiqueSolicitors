@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'chat', loadChildren: './chat/chat.module#ChatPageModule' },
   { path: 'chatroom', loadChildren: './chatroom/chatroom.module#ChatroomPageModule' },
   { path: 'test', loadChildren: './test/test.module#TestPageModule' },
+  { path: 'email', loadChildren: './email/email.module#EmailPageModule' },
 
 ];
  

@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="secondary">
+  <ion-toolbar color="secondary" mode="ios">
     <ion-buttons>
     <ion-back-button defaultHref="/chat"></ion-back-button>
   <ion-title>Boutique Chat Room</ion-title>
@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content #content>
   <div class="chat" *ngFor="let chat of chatRef | async">
     <div class="me" *ngIf="uid == chat.UserID">
       {{ chat.Message }}
@@ -19,10 +19,10 @@
       <span class="name">
         {{ chat.Name }}
       </span> <br> 
-      <!-- <div class="msg"> -->
+      <div class="msg">
       {{ chat.Message }}
-    <!-- </div> -->
-      <!-- <div class="time" text-right>{{ chat.Timestamp.toDate().toLocaleString() }}</div> -->
+    </div>
+      <div class="time" text-right>{{ chat.Timestamp.toDate().toLocaleString() }}</div>
 
     </div>
   </div>
