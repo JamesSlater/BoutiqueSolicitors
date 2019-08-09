@@ -11,7 +11,7 @@
   <div class="chat" *ngFor="let chat of chatRef | async">
     <div class="me" *ngIf="uid == chat.UserID">
       {{ chat.Message }}
-     
+      <div class="time" text-right>{{ chat.Timestamp.toDate().toLocaleString() }}</div>
     </div>
     
 

@@ -9,56 +9,25 @@
 </ion-header>
 </div>
     <h2 style="text-align: center;">Meet the Team</h2>
-  <ion-searchbar></ion-searchbar>
+  <ion-searchbar [formControl]="searchControl" (ionChange)="onSearchInput()" animated="true"></ion-searchbar>
+  <div *ngIf="searching" class="spinner-container">
+    <ion-spinner></ion-spinner>
+  </div>
 <ion-content text-center>
 
   <br>
+  <ion-list>
+  <ion-item color="secondary" text-wrap *ngFor="let team of teams">
+    <ion-avatar class="avatar" slot="start"><img src="{{ team.headshot }}"></ion-avatar>
+    <ion-label text-wrap><b>
+      {{ team.name }}
+    </b>&nbsp; <h6>
+      {{ team.role }}
+    </h6>
+    </ion-label>
+    <br>
+  </ion-item>
+  
+</ion-list>
 
-  <ion-item color="secondary" text-wrap>
-    <ion-avatar slot="start"><img src="assets/1.jpg"></ion-avatar>
-    <ion-label text-wrap><b>Stefan Zweistra</b>
-      &nbsp;
-      <h6>Solicitor/Supervisor</h6>
-    </ion-label>
-  </ion-item>
-  <br>
-  <ion-item color="secondary" text-wrap>
-    <ion-avatar slot="start"><img src="assets/2.jpg"></ion-avatar>
-    <ion-label text-wrap><b>Susana Collins</b>
-      &nbsp;
-      <h6> Quality Compliance Manager & Solicitor </h6>
-    </ion-label>
-  </ion-item>
-  <br>
-  <ion-item color="secondary" text-wrap>
-    <ion-avatar slot="start"><img src="assets/3.jpg"></ion-avatar>
-    <ion-label text-wrap><b>Stephen Crawford</b>
-      &nbsp;
-      <h6>Senior Caseworker</h6>
-    </ion-label>
-  </ion-item>
-  <br>
-  <ion-item color="secondary" text-wrap>
-    <ion-avatar slot="start"><img src="assets/4.jpg"></ion-avatar>
-    <ion-label text-wrap><b>Nathaniel Burns</b>
-      &nbsp;
-      <h6>Supervisor Senior Caseworker</h6>
-    </ion-label>
-  </ion-item>
-  <br>
-  <ion-item color="secondary" text-wrap>
-    <ion-avatar slot="start"><img src="assets/5.jpg"></ion-avatar>
-    <ion-label text-wrap><b>Joe Bloggs</b>
-      &nbsp;
-      <h6>Solicitor/Senior Caseworker</h6>
-    </ion-label>
-  </ion-item>
-  <br>
-  <ion-item color="secondary" text-wrap>
-    <ion-avatar slot="start"><img src="assets/6.jpg"></ion-avatar>
-    <ion-label text-wrap><b>Anna Jeffries</b>
-      &nbsp;
-      <h6>Senior Caseworker/Supervisor</h6>
-    </ion-label>
-  </ion-item>
 </ion-content>

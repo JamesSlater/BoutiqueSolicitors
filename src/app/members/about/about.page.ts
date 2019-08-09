@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
+import { ScrollHideConfig } from '../../directives/scroll-hide.directive'
 @Component({
   selector: 'app-about',
   templateUrl: './about.page.html',
@@ -19,4 +20,5 @@ export class AboutPage implements OnInit {
   contact() {
     this.router.navigate(['members/menu/contact'])
   }
+  headerScrollConfig: ScrollHideConfig = { cssProperty: 'margin-top', maxValue: 44 };
 }

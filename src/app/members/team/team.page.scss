@@ -4,29 +4,30 @@
     padding: 25px 10px 40px 10px;
     background: linear-gradient(10deg, #3299cc, #5b3192);
   }
-//   .nav-wrapper {
-//     filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
-//   }
+
 
 ion-buttons {
     position: absolute;
   }
 
-  .icons {
-    // padding-top: 6%;
-  }
-
-  ion-img {
+ion-img {
     //  position: absolute;
       height: 12vh;
       width: 15vh;
       margin: 0 auto;
   }
 
-
-  ion-avatar {
+.avatar {
         height: 100%;
         width: 20%;
   }
 
+.spinner-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
   
+ion-item {
+    color: black;
+  }

@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
   public items: any = []
+  public teams: any = []
   public loaded: boolean = true;
   constructor() { 
     this.items = [
@@ -39,19 +40,51 @@ export class DataService {
         description: "A business which has its headquarters or principle place of business outside the UK can send an overseas representative to the UK to set up a branch office or subsidiary in the UK."
       },
     ];
+    this.teams = [
+      { name: "Stefan Zweistra",
+        role: "Solicitor/Supervisor",
+        headshot: "assets/1.jpg"    
+      },
+      { name: "Susana Collins",
+        role: "Quality Compliance Manager & Solicitor",
+        headshot: "assets/2.jpg"    
+      },
+      { name: "Stephen Crawford",
+        role: "Senior Caseworker",
+        headshot: "assets/3.jpg"    
+      },
+      { name: "Nathaniel Burns",
+        role: "Supervisor Senior Caseworker",
+        headshot: "assets/4.jpg"  
+      },
+      { name: "Joe Bloggs",
+        role: "Solicitor/Senior Caseworker",
+        headshot: "assets/5.jpg"    
+      },
+      { name: "Anna Jeffries",
+        role: "Senior Caseworker/Supervisor",
+        headshot: "assets/6.jpg"    
+      }
+    ]
   }
   filterItems(searchTerm) {
     return this.items.filter(item => {
       return item.title.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
     });
   }
+
+  filterTeam(searchTerm) {
+    return this.teams.filter(team => {
+      return team.name.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
+    });
+  }
   
 
   getData(id) {
-    return this.items.find(items => items.id = id)
-   
-    
-  }
+    return this.items.find(items => items.id = id)   }
 
+  getTeamData(id) {
+    return this.teams.find(teams => teams.id = id)
+  }
 
 }
