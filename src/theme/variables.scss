@@ -12,7 +12,7 @@
   --ion-color-primary-tint: #4c8dff;
 
   /** secondary **/
-  --ion-color-secondary: linear-gradient(90deg, #3299cc, #5b3192);  
+  --ion-color-secondary: linear-gradient(90deg, #3299cc, #5b3192);
   --ion-color-secondary-rgb: 12, 209, 232;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
@@ -75,10 +75,39 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 
-  .toast {
+  /** white **/
+  --ion-color-white: #ffffff;
+  --ion-color-white-rgb: 255, 255, 255;
+  --ion-color-white-contrast: #000000;
+  --ion-color-white-contrast-rgb: 0, 0, 0;
+  --ion-color-white-shade: #d7d8da;
+  --ion-color-white-tint: #f5f6f9;
+
+  /** black **/
+  --ion-color-black: #000000;
+  --ion-color-black-rgb: 0, 0, 0;
+  --ion-color-black-contrast: #ffffff;
+  --ion-color-black-contrast-rgb: 255, 255, 255;
+  --ion-color-black-shade: #d7d8da;
+  --ion-color-black-tint: #f5f6f9;
+
+  /** fonts **/
+  --ion-font-family: 'Montserrat';
+
+  /** border **/
+  --border-r: 100px;
+
+
+
+}
+.toast {
     // background-color: var(--ion-color-secondary);
     background-color: black;
     opacity: 0.9;
-
-  }
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf');
 }

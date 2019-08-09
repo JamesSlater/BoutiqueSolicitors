@@ -62,19 +62,19 @@ export class LoginPage implements OnInit {
       }
     }
 
-    async help() {
-      const toast = await this.toastController.create({
-        header: 'Trouble logging in?',
-        message: 'Contact us admin@boutiquesolicitors.com or call us on 0800 3881 0211',
-        duration: 10000,
-        position: "middle",
-        animated: true,
-        translucent: false,
-        closeButtonText: "OK",
-        cssClass: "toast"
-      });
-      toast.present();
-    }
+  async help() {
+    const toast = await this.toastController.create({
+      header: 'Trouble logging in?',
+      message: 'Contact us admin@boutiquesolicitors.com or call us on 0800 3881 0211',
+      duration: 5000,
+      position: "top",
+      animated: true,
+      translucent: false,
+      closeButtonText: "OK",
+      cssClass: "toast"
+    });
+    toast.present();
   }
 
 
+}

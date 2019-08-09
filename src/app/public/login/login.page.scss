@@ -1,86 +1,94 @@
-.bg {
-    background: linear-gradient(to right, #3299cc, #5b3192);
-}
-h1 {
-      text-align: center;
-      font-family: 'Varela Round';
-      color: #FFF;
-  }
-
-  
-ion-img {    
-    height: 20vh;
-    width: 25vh;
- 
-   margin: 0 auto;
-    
-}
 
 $white-color: #fff;
 $height100: 100%;
 
+ion-content {
+  --background: linear-gradient(135deg, #3299cc 0%,#5b3192 100%);
+  transition: all 300ms ease-in-out;
+}
 ion-grid {
-    width:100%;
-    height: $height100;
-
-    background: linear-gradient(10deg, #3299cc, #5b3192);
-//     background-size: 400% 400%;
-
-// --webkit-animation: fancy-bg-animation 3s linear infinite;
-// --moz-animation: fancy-bg-animation 3s linear infinite;
-// animation: fancy-bg-animation 3s linear infinite;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.animate {
+  animation: login-animation 1500ms linear both;
+}
+.border-r {
+  --border-radius: var(--border-r);
 }
 
-@-webkit-keyframes fancy-bg-animation {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 51%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes fancy-bg-animation {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 51%}
-  100%{background-position:0% 50%}
-}
-@keyframes fancy-bg-animation {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 51%}
-  100%{background-position:0% 50%}
+@keyframes login-animation {
+  0% { transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  3.4% { transform: matrix3d(0.658, 0, 0, 0, 0, 0.703, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.7% { transform: matrix3d(0.725, 0, 0, 0, 0, 0.8, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  6.81% { transform: matrix3d(0.83, 0, 0, 0, 0, 0.946, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  9.41% { transform: matrix3d(0.942, 0, 0, 0, 0, 1.084, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  10.21% { transform: matrix3d(0.971, 0, 0, 0, 0, 1.113, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  13.61% { transform: matrix3d(1.062, 0, 0, 0, 0, 1.166, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  14.11% { transform: matrix3d(1.07, 0, 0, 0, 0, 1.165, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.52% { transform: matrix3d(1.104, 0, 0, 0, 0, 1.12, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  18.72% { transform: matrix3d(1.106, 0, 0, 0, 0, 1.094, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  21.32% { transform: matrix3d(1.098, 0, 0, 0, 0, 1.035, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  24.32% { transform: matrix3d(1.075, 0, 0, 0, 0, 0.98, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  25.23% { transform: matrix3d(1.067, 0, 0, 0, 0, 0.969, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.03% { transform: matrix3d(1.031, 0, 0, 0, 0, 0.948, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.93% { transform: matrix3d(1.024, 0, 0, 0, 0, 0.949, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  35.54% { transform: matrix3d(0.99, 0, 0, 0, 0, 0.981, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  36.74% { transform: matrix3d(0.986, 0, 0, 0, 0, 0.989, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  41.04% { transform: matrix3d(0.98, 0, 0, 0, 0, 1.011, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  44.44% { transform: matrix3d(0.983, 0, 0, 0, 0, 1.016, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  52.15% { transform: matrix3d(0.996, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  59.86% { transform: matrix3d(1.003, 0, 0, 0, 0, 0.995, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  63.26% { transform: matrix3d(1.004, 0, 0, 0, 0, 0.996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  75.28% { transform: matrix3d(1.001, 0, 0, 0, 0, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  85.49% { transform: matrix3d(0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  90.69% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
 
-ion-row {
-    height: $height100;
+.login-inputs {}
+.login-title {
+  color: var(--ion-color-white);
 }
+.login-name {}
+.login-pass {}
+.login-button {
+  text-transform: uppercase;
+}
+.login-help {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  color: var(--ion-color-white);
+}
+ion-label {
+  display: inline;
+  color: var(--ion-color-danger);
+  font-size: 18px;
+}
+ion-img.login-logo {
+    width: 25vh;
+
+   margin: 0 auto;
+
+}
+
+
+
 
 
 ion-button {
-    font-weight: 300;
-    --border-radius: 20px;
     --color: #000;
-    font-family: 'Varela Round';   
+    // font-family: 'Varela Round';
 }
 
-@media (min-width: 240px) and (max-width: 768px) {
-    ion-grid {
-      //  background: linear-gradient(to right, #3299cc, #5b3192);   
-     }
-    ion-col {
-        border: none;
-    }
-}
-
-ion-label {
-    color: red;
-    font-size: 12;
-}
-
-ion-item {
-    --border-radius: 20px;
-}
 
   .quickcontact {
   text-align: right;
   color: white;
-  margin-right: 20%;  
+  margin-right: 20%;
 }
 
 .quickcontact ion-fab-button {
@@ -91,8 +99,4 @@ ion-item {
 .quickcontact ion-label {
   color: white;
   margin-top: 20px;
-}
-
-.toast {
-  --background: blue;
 }
