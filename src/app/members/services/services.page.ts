@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { FormControl } from '@angular/forms';
 import { debounceTime } from "rxjs/operators";
-import { NavController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular'; 
 import { Router } from '@angular/router';
 import { ServicedetailsPage } from '../servicedetails/servicedetails.page'
@@ -17,7 +16,7 @@ export class ServicesPage implements OnInit {
   public items: any;
   public searching: any = false;
   public data;
-  constructor(private dataService: DataService, private navCtrl: NavController, public router: Router, public modalController: ModalController) {
+  constructor(private dataService: DataService, public router: Router, public modalController: ModalController) {
     this.searchControl = new FormControl();
   }
 
@@ -41,13 +40,6 @@ export class ServicesPage implements OnInit {
     this.items = this.dataService.filterItems(searchTerm);
   }
 
-  // viewDetails(item) {
-  //   let dataString = JSON.stringify(item)
-
-  //   // this.navCtrl.navigateForward('/members/details', item)
-  //   this.router.navigate(['members/menu/servicedetails/' + dataString])
-  //   // this.navCtrl.navigateBack('members/servicedetails',{data: item})
-  // }
 
   async viewDetails(item) {
     const modal = await this.modalController.create({

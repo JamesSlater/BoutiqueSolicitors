@@ -19,9 +19,8 @@ import { ServicedetailsPageModule } from '../app/members/servicedetails/serviced
 import { Alert } from 'selenium-webdriver';
 import { LoginPageModule } from './public/login/login.module';
 import { EmailPageModule } from  './members/email/email.module';
-import { HideheaderDirective } from './directives/hideheader.directive';
 @NgModule({
-  declarations: [AppComponent, HideheaderDirective],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [
     LoginPageModule,

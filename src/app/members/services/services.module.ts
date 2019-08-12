@@ -12,7 +12,6 @@ import { ServicesPage } from './services.page';
     path: '',
     component: ServicesPage
   }
-
 ];
 
 @NgModule({

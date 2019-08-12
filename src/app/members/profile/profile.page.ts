@@ -21,8 +21,10 @@ export interface MyData {
   styleUrls: ['profile.page.scss'],
 })
 export class ProfilePage {
-  uid = this.afAuth.auth.currentUser.uid
+ uid = this.afAuth.auth.currentUser.uid
  firstName = this.firstName;
+
+  
   // Upload Task 
   task: AngularFireUploadTask;
  
@@ -131,8 +133,6 @@ export class ProfilePage {
     // this.afAuth.auth.currentUser.displayName = this.firstName;
     this.afAuth.auth.currentUser.updateProfile({displayName: this.firstName})
     this.router.navigate(['members/menu/dashboard'])
-    
- 
   }
 
 }

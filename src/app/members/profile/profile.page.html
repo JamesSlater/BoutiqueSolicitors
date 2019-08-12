@@ -29,7 +29,7 @@
 <br>
 <br>
 <ion-label>First Name:</ion-label>
-<ion-input [(ngModel)]="firstName" no-emoticons></ion-input>
+<ion-input [(ngModel)]="firstName" pattern="/[^\w]|_/g"></ion-input>
 <ion-label>Surname:</ion-label>
 <ion-input no-emoticons></ion-input>
 <br>
