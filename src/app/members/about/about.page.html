@@ -1,5 +1,5 @@
 <div class="nav-wrapper" style="background: white;">
-  <ion-header class="navbar" [(scrollHide)]="headerScrollConfig" [scrollContent]="pageContent">
+  <ion-header class="navbar">
     <div class="icons">
     <ion-buttons slot="start">
       <ion-menu-button color="tertiary"></ion-menu-button>
@@ -7,7 +7,7 @@
     <img src="assets/logo.png" /></div>
   </ion-header>
 </div>
-<ion-content #pageContent fullscreen>
+<ion-content #pageContent >
 
 
   <ion-card class="aboutcard">
@@ -17,20 +17,12 @@
       <ion-card-subtitle>BOUTIQUE SOLICITORS</ion-card-subtitle>
     </ion-card-header>
 
-    <ion-card-content>BOUTIQUE Immigration Lawyers of London have
-      ‘years of specialist Legal experience at your disposal’
-      <br>
-      Established in 1998 as a niche human rights firm – we have a trusted record of excellent service. BOUTIQUE are
-      frequently recommended by a long list of happy clients.
-      We are passionate about our work and dedicated to achieving life-changing results.
-      <br>
-      OUR PROMISE
-      <br>
-      “If you come to BOUTIQUE, you will get the result you want.
-      If there is a way, we find it and do it for you.
-      If there is no way we tell you, and don’t waste your time.
-      Where there is a way, we will deliver.”
-      Lawrence Lupin – Founding Director
+    <ion-card-content>
+      <p>BOUTIQUE Immigration Lawyers of London have 'years of specialist Legal experience at your disposal'.</p>
+      <p>Established in 1998 as a niche human rights firm – we have a trusted record of excellent service. BOUTIQUE are frequently recommended by a long list of happy clients. We are passionate about our work and dedicated to achieving life-changing results.</p>
+      <h1>OUR PROMISE</h1>
+      <p><em>"If you come to BOUTIQUE, you will get the result you want. If there is a way, we find it and do it for you. If there is no way we tell you, and don’t waste your time. Where there is a way, we will deliver."</em></p>
+      <p><strong>Lawrence Lupin – Founding Director</strong></p>
     </ion-card-content>
   </ion-card>
 

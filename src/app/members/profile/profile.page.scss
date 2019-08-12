@@ -1,10 +1,9 @@
 .navbar {
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
-    padding: 25px 10px 40px 10px;
-    background: linear-gradient(10deg, #3299cc, #5b3192);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+    padding: 25px 10px 20px 10px;
+    background: linear-gradient(135deg, #3299cc 0%,#5b3192 100%);
   }
-
 
 ion-buttons {
     position: absolute;
@@ -17,15 +16,43 @@ ion-img {
       margin: 0 auto;
   }
 
-  .afProfile {
-      border: 1px solid black;
-      margin: 5%;
-            ion-input {
-                border: 1px solid black;
-                border-radius: 20px;
-                margin-top: 5%;
-                margin-bottom: 5%;
-            }
+.afProfile {
+  background: #f8f8f8;
+
+    ion-card,
+    ion-input {
+      box-shadow: var(--box-shadow);
+    }
+    ion-label {
+
+    }
+
+    ion-input {
+      background: var(--ion-color-white);
+      // border: 1px solid #f1f1f1;
+      margin-bottom: 2%;
+    }
+    ion-input,
+    ion-button {
+      margin-top: 2%;
+      border-radius: var(--border-r);
+      --border-radius: var(--border-r);
+    }
+    ion-label,
+    span {
+      font-size: 14px;
+    }
+    // ion-button {
+    //   margin-top: 10%;
+    // }
+    ion-card,
+    ion-label {
+      background: var(--ion-color-white);
+    }
+    ion-card-content {
+      padding-top: 0;
+    }
+
   }
 
   .uploadcard {
@@ -35,4 +62,3 @@ ion-img {
     // margin-bottom: 10%;
     margin: 10%;
   }
-

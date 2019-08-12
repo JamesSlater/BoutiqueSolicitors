@@ -1,28 +1,23 @@
 .navbar {
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
-    padding: 25px 10px 40px 10px;
-    background: linear-gradient(10deg, #3299cc, #5b3192);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+    padding: 25px 10px 20px 10px;
+    background: var(--gradient-bg);
   }
 
 
   ion-buttons {
     position: absolute;
-   
+
   }
 
 
   .navbar img {
-     
+
       height: 12vh;
       width: 15vh;
       margin: 0 auto;
       display: block;
-      transform: translateX(21%);
-
-     
-      // margin-left: auto;
-      // margin-right: auto;
   }
 
   .profile {
@@ -35,11 +30,12 @@
     z-index: 100;
   }
 
+
   .profile ion-avatar {
       margin: 0 auto;
       height: 22vh;
       width: 22vh;
-      border: 1px solid #000; 
+      box-shadow: var(--box-shadow);
   }
 
   #profilePic {
@@ -52,7 +48,7 @@
   .profile h1 {
       color: blue;
   }
-  
+
   .about {
     height: 55%;
     width: 20%;
@@ -65,7 +61,7 @@
   }
 
   .activeTab {
-    background: linear-gradient(10deg, #3299cc, #5b3192);
+    background: var(--gradient-bg);
     color: white;
 }
 
@@ -75,17 +71,13 @@
     // bottom: 5px;
     bottom: 0;
     right: 0;
-    background: linear-gradient(10deg, #3299cc, #5b3192);
+    background: var(--gradient-bg);
 
 }
 
 .settings {
-  float: right;
-  margin-right: 5%;
-  margin-top: 1%;
-  height: 25px;
-  width: 25px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: var(--ion-color-white);
 }
-
-
-

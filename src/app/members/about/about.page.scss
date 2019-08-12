@@ -1,14 +1,14 @@
 .activeTab {
-    background: linear-gradient(10deg, #3299cc, #5b3192);
+    background: var(--gradient-bg);
     color: white;
     height: 100%;
 }
 
 .navbar {
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
-    padding: 25px 10px 40px 10px;
-    background: linear-gradient(10deg, #3299cc, #5b3192);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+    padding: 25px 10px 20px 10px;
+    background: var(--gradient-bg);
   }
 //   .nav-wrapper {
 //     filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
@@ -19,7 +19,7 @@
 ion-buttons {
     position: absolute;
   }
-  
+
  .navbar img {
     //  position: absolute;
       height: 12vh;
@@ -30,14 +30,12 @@ ion-buttons {
       margin-right: auto;
   }
 ion-card {
-     border: 0.5px solid #3299cc;
+     // border: 0.5px solid #3299cc;
+     box-shadow: var(--box-shadow);
 }
 
-.tabs {
-  position:fixed;
-  left: 0;
-  bottom: 0;
-  right: 0;
+p, h1 {
+  margin-bottom: 2vw;
 }
 
 .aboutcard {

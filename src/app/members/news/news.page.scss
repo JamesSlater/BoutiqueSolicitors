@@ -1,8 +1,8 @@
 .navbar {
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 60px, 50% 100%, 0 60px);
-    padding: 25px 10px 40px 10px;
-    background: linear-gradient(10deg, #3299cc, #5b3192);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+    padding: 25px 10px 20px 10px;
+    background: var(--gradient-bg);
   }
 
   .icons {
