@@ -1,5 +1,5 @@
 <div class="nav-wrapper" style="background: white;">
-  <ion-header class="navbar" [(scrollHide)]="headerScrollConfig" [scrollContent]="pageContent">
+  <ion-header class="navbar">
     <div class="icons">
     <ion-buttons slot="start">
       <ion-menu-button color="tertiary"></ion-menu-button>
@@ -7,83 +7,41 @@
     <img src="assets/logo.png" /></div>
   </ion-header>
 </div>
-<ion-content #pageContent fullscreen>
+<ion-content #pageContent >
 
- 
+
   <ion-card class="aboutcard">
     <ion-img src="assets/pic1.jpg"></ion-img>
     <ion-card-header>
       <ion-card-title>About Us</ion-card-title>
       <ion-card-subtitle>BOUTIQUE SOLICITORS</ion-card-subtitle>
     </ion-card-header>
-    
-    <ion-card-content>BOUTIQUE Immigration Lawyers of London have
-      ‘years of specialist Legal experience at your disposal’
-      <br>
-      Established in 1998 as a niche human rights firm – we have a trusted record of excellent service. BOUTIQUE are
-      frequently recommended by a long list of happy clients.
-      We are passionate about our work and dedicated to achieving life-changing results.
-      <br>
-      OUR PROMISE
-      <br>
-      “If you come to BOUTIQUE, you will get the result you want.
-      If there is a way, we find it and do it for you.
-      If there is no way we tell you, and don’t waste your time.
-      Where there is a way, we will deliver.”
-      Lawrence Lupin – Founding Director
+
+    <ion-card-content>
+      <p>BOUTIQUE Immigration Lawyers of London have 'years of specialist Legal experience at your disposal'.</p>
+      <p>Established in 1998 as a niche human rights firm – we have a trusted record of excellent service. BOUTIQUE are frequently recommended by a long list of happy clients. We are passionate about our work and dedicated to achieving life-changing results.</p>
+      <h1>OUR PROMISE</h1>
+      <p><em>"If you come to BOUTIQUE, you will get the result you want. If there is a way, we find it and do it for you. If there is no way we tell you, and don’t waste your time. Where there is a way, we will deliver."</em></p>
+      <p><strong>Lawrence Lupin – Founding Director</strong></p>
     </ion-card-content>
   </ion-card>
+ 
+    </ion-content>
 
-  <!-- <div class="card">
-      <div class="scroll" scrollY="true">
-      <div id="pic">
-      <ion-img src="assets/pic1.jpg"></ion-img>
-      </div>
-      <div id="card-content">
-      <h3>About Us</h3>
-      <h5 style="color: grey;">Boutique Solicitors</h5>
-      <br>
-      BOUTIQUE Immigration Lawyers of London have
-      ‘years of specialist Legal experience at your disposal’
-      <br>
-      <br>
-      Established in 1998 as a niche human rights firm – we have a trusted record of excellent service. BOUTIQUE are
-      frequently recommended by a long list of happy clients.
-      We are passionate about our work and dedicated to achieving life-changing results.
-      <br>
-      <br>
-      <b>OUR PROMISE</b>
-      <br>
-      “If you come to BOUTIQUE, you will get the result you want.
-      If there is a way, we find it and do it for you.
-      If there is no way we tell you, and don’t waste your time.
-      Where there is a way, we will deliver.”
-      Lawrence Lupin – Founding Director
-    </div>
-  </div>
-    </div> -->
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button class="activeTab">
+      <ion-icon name="information-circle-outline"></ion-icon>
+      <ion-label>About Us</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="dashboard()" class="adjustHeight">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Dashboard</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="contact()" class="adjustHeight">
+      <ion-icon name="contacts"></ion-icon>
+      <ion-label>Contact Us</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
 
-      <ion-toolbar style="position: fixed;
-        left: 0;
-        bottom: 0;
-        right: 0;">      
-
-     <ion-tabs>
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button class="activeTab">
-          <ion-icon name="information-circle-outline"></ion-icon>
-          <ion-label>About Us</ion-label>
-        </ion-tab-button>
-        <ion-tab-button (click)="dashboard()" class="adjustHeight">
-          <ion-icon name="home"></ion-icon>
-          <ion-label>Dashboard</ion-label>
-        </ion-tab-button>
-        <ion-tab-button (click)="contact()" class="adjustHeight">
-          <ion-icon name="contacts"></ion-icon>
-          <ion-label>Contact Us</ion-label>
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
-  </ion-toolbar>
-
-</ion-content>

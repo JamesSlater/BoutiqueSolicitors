@@ -1,15 +1,14 @@
-<div class="nav-wrapper" style="background: white;">
-  <!-- <ion-header class="navbar"> -->
+
     <ion-header>
-      <ion-toolbar color="secondary">
+      <ion-toolbar color="var(--gradient-bg)">
     <ion-buttons slot="start">
       <ion-menu-button color="tertiary"></ion-menu-button>
     </ion-buttons>
-<ion-icon (click)="settings()" class="settings" color="tertiary" name="settings"></ion-icon>
+<!-- <ion-icon (click)="settings()" class="settings" color="tertiary" name="settings"></ion-icon> -->
     <ion-img src="assets/logo.png"></ion-img>
 </ion-toolbar>
 </ion-header>
-</div>
+
 
 <ion-content text-center>
 
@@ -30,14 +29,11 @@
         </ion-tab-bar>
       </ion-tabs>
 <h1>Connections</h1>
+<h3>Your Chat PIN is: {{ pin }} </h3>
+
 <div class="chats"></div>
-<!-- <ion-list>
-  <ion-item> -->
+
     <ion-button color="success" (click)="chatroom()">MAIN CHAT ROOM</ion-button>
-  <!-- </ion-item>
-</ion-list>  -->
-<!-- <ion-footer class="newConnection">
-  <ion-button><ion-icon name="add"></ion-icon> New Connection</ion-button>
-</ion-footer> -->
+
 </ion-content>
 

@@ -10,12 +10,12 @@ let _this
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  email: string = "slaterfps@gmail.com"
-  pass: string = "admin1"
+  // email: string = "slaterfps@gmail.com"
+  // pass: string = "admin1"
   // email: string = "a@guest.com";
   // pass: string = "testing";
-  // email: string = "adam.brookner@theaccesspoint.co.uk"
-  // pass: string = "4206969"
+  email: string = "adam.brookner@theaccesspoint.co.uk"
+  pass: string = "4206969"
     // email: string = "gary.shaw@theaccesspoint.co.uk";
     // pass: string = "accesspoint"
   error = this.error = "";
@@ -70,7 +70,13 @@ export class LoginPage implements OnInit {
         position: "middle",
         animated: true,
         translucent: false,
-        closeButtonText: "OK",
+        // closeButtonText: "OK",
+        buttons: [
+          {
+          text: 'OK',
+          role: 'cancel'
+          }
+        ],
         cssClass: "toast"
       });
       toast.present();

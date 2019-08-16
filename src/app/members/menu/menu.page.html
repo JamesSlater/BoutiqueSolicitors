@@ -4,7 +4,7 @@
 
     <ion-header>
 
-      <ion-toolbar color="secondary" mode="ios">
+      <ion-toolbar color="medium" mode="ios">
 
         <ion-title>MAIN MENU</ion-title>
         <ion-button size="small" color="tertiary" fill="outline" class="logout" (click)="logout()">LOG OUT</ion-button>
@@ -14,13 +14,13 @@
 
 
 
-    <ion-content padding color="secondary">
-
-    <ion-list style="background: linear-gradient(10deg, #3299cc, #5b3192);">
+    <ion-content padding color="medium">
+      <div class="gradient">
+    <ion-list style="background: linear-gradient(135deg, #3299cc 0%,#5b3192 100%);">
 
         <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
 
-          <ion-item [routerLink]="p.url" routerDirection="root" color="secondary" [class.active-item]="selectedPath.startsWith(p.url)">
+          <ion-item [routerLink]="p.url" routerDirection="root" color="medium" [class.active-item]="selectedPath.startsWith(p.url)">
             <ion-icon [name]="p.icon" item-left></ion-icon>
 
             {{p.title}}
@@ -29,8 +29,8 @@
 
         </ion-menu-toggle>
 
-      </ion-list>
-
+    </ion-list>
+      </div>
     </ion-content>
 
   </ion-menu>

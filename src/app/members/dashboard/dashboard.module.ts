@@ -17,9 +17,18 @@ const routes: Routes = [
       
 
   {
-        path: 'dashboard',
-        redirectTo: ''
-  }
+    path: 'dashboard',
+    redirectTo: ''
+  },
+  // {
+  //   path: 'about',
+  //   redirectTo: 'members/menu/about'
+  // },
+  // {
+  //   path: 'contact',
+  //   redirectTo: 'members/menu/contact'
+  // }
+
       
 
 ]

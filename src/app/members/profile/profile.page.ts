@@ -1,12 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { NavController } from '@ionic/angular'; 
 import { AngularFireStorage, AngularFireUploadTask } from '@angular/fire/storage';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { finalize, tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
-import { DashboardPage } from '../dashboard/dashboard.page';
  
 export interface MyData {
   name: string;
@@ -49,7 +47,7 @@ export class ProfilePage {
   isUploaded:boolean;
  
   private imageCollection: AngularFirestoreCollection<MyData>;
-  constructor(private storage: AngularFireStorage, private database: AngularFirestore, private afAuth: AngularFireAuth, private navCtrl: NavController, private router: Router) {
+  constructor(private storage: AngularFireStorage, private database: AngularFirestore, private afAuth: AngularFireAuth, private router: Router) {
     this.isUploading = false;
     this.isUploaded = false;
     //Set collection where our documents/ images info will save
